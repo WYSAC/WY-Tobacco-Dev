@@ -120,11 +120,17 @@ function wysac_wy_tobacco_scripts() {
 
 	wp_enqueue_script( 'wysac-wy-tobacco-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
+	wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap-3.3.5-dist/js/bootstrap.min.js', array( 'jquery'), '3.0.1' true);
+	wp_register_style( 'boostrap-css', get_template_directory_uri() . '/bootstrap-3.3.5-dist/css/bootstrap.min.css', array(), '3.0.1', 'all');
+	wp_enqueue_script('bootstrap-js');
+	wp_enqueue_style('boostrap-css');
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'wysac_wy_tobacco_scripts' );
+remove_filter('the_content', 'wpautop');
 
 /**
  * Implement the Custom Header feature.
