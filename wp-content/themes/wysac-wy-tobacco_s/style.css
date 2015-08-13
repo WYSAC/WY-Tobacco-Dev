@@ -44,11 +44,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic,300|Montserrat:400,700);
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
+	font-family: serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -275,6 +277,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
+	font-family:'Georgia', serif;
 }
 
 h1,
@@ -283,6 +286,7 @@ h3,
 h4,
 h5,
 h6 {
+	font-family:'Montserrat', 'Arial', sans-serif;
 	clear: both;
 }
 

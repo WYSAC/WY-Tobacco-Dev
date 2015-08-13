@@ -114,16 +114,19 @@ add_action( 'widgets_init', 'wysac_wy_tobacco_widgets_init' );
  * Enqueue scripts and styles.
  */
 function wysac_wy_tobacco_scripts() {
-	wp_enqueue_style( 'wysac-wy-tobacco-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'wysac-wy-tobacco-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'wysac-wy-tobacco-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
-	wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap-3.3.5-dist/js/bootstrap.min.js', array( 'jquery'), '3.0.1' true);
-	wp_register_style( 'boostrap-css', get_template_directory_uri() . '/bootstrap-3.3.5-dist/css/bootstrap.min.css', array(), '3.0.1', 'all');
+/* get the bootstrap and load it*/
+	wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap-3.3.5-dist/js/bootstrap.js', array( 'jquery'), '3.0.1', true);
+	wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/bootstrap-3.3.5-dist/css/bootstrap.css', array(), '3.3.5', 'all');
 	wp_enqueue_script('bootstrap-js');
-	wp_enqueue_style('boostrap-css');
+	wp_enqueue_style('bootstrap-css');
+
+/*move the theme css to override bootstrap*/
+	wp_enqueue_style( 'wysac-wy-tobacco-style', get_stylesheet_uri() );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
