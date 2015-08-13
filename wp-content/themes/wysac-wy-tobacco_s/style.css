@@ -27,6 +27,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Typography
 # Elements
 # Forms
+#Page Structure
+	##Containers
 # Navigation
 	## Links
 	## Menus
@@ -50,7 +52,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: serif;
+	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -285,8 +287,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-	font-family:'Montserrat', 'Arial', sans-serif;
+h6, .site-title {
+	font-family:'Montserrat', 'Franklin Gothic', 'Helvetica', 'Arial', sans-serif;
 	clear: both;
 }
 
@@ -493,25 +495,52 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+# Page Structure
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Containers
+--------------------------------------------------------------*/
+body {
+margin:0 auto;
+width: 85%;
+overflow-x: hidden;
+}
+
+.site-description {
+	margin:0 -15%;  /* move the content over */
+	padding:1em 15%;
+	background-color: rgb(35, 40, 45);
+	height:3em;
+	font-family:'Open Sans', 'Arial', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color:rgb(173, 173, 173);
+	font-size:0.7em;
+}
+.site-title {
+	margin:0 -15%;  /* move the content over */
+	padding:0.5em 15%;
+	font-size:2.4em;
+	background:rgb(215, 210, 208);
+}
+
+
+
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-	color: royalblue;
+a, a:hover, a:active, a:visited{
+	color: rgb(194, 125, 56);
+	padding:1px 2px;
 }
 
-a:visited {
-	color: purple;
+a:hover {
+background-color: rgb(249, 242, 237);
+text-decoration: none;
 }
-
-a:hover,
-a:focus,
-a:active {
-	color: midnightblue;
-}
-
 a:focus {
 	outline: thin dotted;
 }
@@ -522,20 +551,45 @@ a:active {
 }
 
 /*--------------------------------------------------------------
+## Masthead/Branding Links
+--------------------------------------------------------------*/
+.site-description a,.site-description a:hover,.site-description a:visited{
+	color:rgb(173, 173, 173);
+	background:none;
+}
+
+.site-title a { /*take out all the link crap in the masthead*/
+	color:rgb(38, 38, 38);
+}
+.site-title a:hover { /*take out all the link crap in the masthead*/
+	background:none;
+}
+.site-title span {
+color:rgb(129, 125, 114);
+text-transform:uppercase;
+font-size: 0.65em;
+}
+
+/*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
 	clear: both;
 	display: block;
 	float: left;
-	width: 100%;
+	width: 200%;
+	background-color: rgb(169, 87, 38);
+	margin:0 -15%;  /* move the content over */
+	padding:0 15%;
+
 }
 
 .main-navigation ul {
 	display: none;
 	list-style: none;
-	margin: 0;
+	margin:0;
 	padding-left: 0;
+
 }
 
 .main-navigation li {
@@ -546,6 +600,14 @@ a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	text-transform:uppercase;
+	color:white;
+	padding:0.8em 1em;
+}
+.main-navigation a:hover {
+		background-color: rgb(102, 53, 23);
+
 }
 
 .main-navigation ul ul {
@@ -572,10 +634,12 @@ a:active {
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
+
 }
 
 .main-navigation ul ul :hover > a,
 .main-navigation ul ul .focus > a {
+
 }
 
 .main-navigation ul ul a:hover,
@@ -889,4 +953,18 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@media (max-width:775px) {
+	/*tablets*/
+	#page {
+		padding: 0 5%;
+	}
+
+}
+@media (max-width:360px) {
+	/*phones large and small*/
+
 }
