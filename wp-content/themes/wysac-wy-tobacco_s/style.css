@@ -52,7 +52,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic,300|Montserrat:400,700);
+/* First, Let's import the fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic,300|Montserrat:400,700|Merriweather:400,700italic,700,900,400italic,300);
 
 /*--------------------------------------------------------------
 # Normalize
@@ -285,7 +287,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
-	font-family:'Georgia', serif;
+	font-family:'Merriweather', 'Georgia', serif;
 }
 
 h1,
