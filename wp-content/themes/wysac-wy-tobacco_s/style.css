@@ -527,7 +527,7 @@ overflow-x: hidden;
 	margin:0 -15%;  /* move the content over */
 	padding:0.5em 15%;
 	font-size:2.4em;
-	background:rgb(241, 233, 230);
+	background:rgb(232, 229, 229);
 }
 
 /*--------------------------------------------------------------
@@ -552,7 +552,12 @@ overflow-x: hidden;
 /*--------------------------------------------------------------
 ### Footer Area
 --------------------------------------------------------------*/
-
+.site-footer {
+	margin:0 -15%;  /* move the content over */
+	padding:1em 15%;
+	background-color: rgb(35, 40, 45);
+	color:white;
+}
 
 /*--------------------------------------------------------------
 # Navigation
@@ -836,15 +841,20 @@ text-transform: none;
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+/* layout and location of widgets are styled in the "Page Structure" section */
+
 .widget {
 	margin: 0 0 1.5em;
-	border:solid thin lightgray;
-	border-left:solid 2px red;
-	padding: 0 0.5em;
+	border:solid thin rgb(232, 229, 229);
+	border-left:solid 3px rgb(182, 182, 182);
+	padding: 0 0.7em;
+	box-shadow: 10px 10px 14px -12px rgba(217,217,217,1);
+		-webkit-box-shadow: 10px 10px 14px -12px rgba(217,217,217,1);
+		-moz-box-shadow: 10px 10px 14px -12px rgba(217,217,217,1);
 }
 
 .widget-title {
-	margin: 0.2em 0;
+	margin: 0.3em 0;
 }
 
 /* Make sure select elements fit in widgets. */
@@ -891,6 +901,27 @@ text-transform: none;
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+/*--------------------------------------------------------------
+### Entry Meta Data Format
+--------------------------------------------------------------*/
+.entry-meta {
+	font-family:'Open Sans', 'Arial', sans-serif;
+	font-size:0.7em;
+	text-transform:uppercase;
+}
+
+.posted-on a, .author a {
+	font-weight:700;
+	color:green;
+}
+.posted-on a:active,
+.posted-on a:hover,
+.author a:active,
+.author a:hover {
+background-color:lightgreen;
+}
+
 
 /*--------------------------------------------------------------
 ## Asides
