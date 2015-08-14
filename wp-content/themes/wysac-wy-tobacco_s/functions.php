@@ -64,7 +64,7 @@ function wysac_wy_tobacco_setup() {
 	 * See https://developer.wordpress.org/themes/functionality/post-formats/
 	 */
 	add_theme_support( 'post-formats', array(
-		'aside',
+		//'aside', --> take out aside. we don't need it.
 		'image',
 		'video',
 		'quote',
@@ -76,6 +76,9 @@ function wysac_wy_tobacco_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	// Set default values for media upload attachment type from link to none
+	update_option ('image_default_link_type', 'none');
 }
 endif; // wysac_wy_tobacco_setup
 add_action( 'after_setup_theme', 'wysac_wy_tobacco_setup' );
@@ -119,13 +122,13 @@ function wysac_wy_tobacco_scripts() {
 
 	wp_enqueue_script( 'wysac-wy-tobacco-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
-/* get the bootstrap and load it*/
+/* get the bootstrap css and js and load it*/
 	wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap-3.3.5-dist/js/bootstrap.js', array( 'jquery'), '3.0.1', true);
 	wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/bootstrap-3.3.5-dist/css/bootstrap.css', array(), '3.3.5', 'all');
 	wp_enqueue_script('bootstrap-js');
 	wp_enqueue_style('bootstrap-css');
 
-/*move the theme css to override bootstrap*/
+/* move the theme css here to override bootstrap */
 	wp_enqueue_style( 'wysac-wy-tobacco-style', get_stylesheet_uri() );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

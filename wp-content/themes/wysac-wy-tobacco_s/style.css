@@ -521,7 +521,7 @@ overflow-x: hidden;
 	margin:0 -15%;  /* move the content over */
 	padding:0.5em 15%;
 	font-size:2.4em;
-	background:rgb(215, 210, 208);
+	background:rgb(241, 233, 230);
 }
 
 
@@ -600,10 +600,12 @@ font-size: 0.65em;
 .main-navigation a {
 	display: block;
 	text-decoration: none;
-	font-family: 'Montserrat', 'Arial', sans-serif;
+	font-family: 'Open Sans', 'Arial', sans-serif;
 	text-transform:uppercase;
 	color:white;
-	padding:0.8em 1em;
+	padding:0.8em 1.5em;
+	letter-spacing: 1px;
+	font-size: 0.9em;
 }
 .main-navigation a:hover {
 		background-color: rgb(102, 53, 23);
@@ -659,9 +661,22 @@ font-size: 0.65em;
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a {
+	background-color: rgb(122, 75, 45);
 }
 
-/* Small menu. */
+
+/* Sub Menu under the main navigation */
+ul.sub-menu {
+	background-color:rgb(129, 90, 65);
+	margin-top:1.95em;
+	font-size:0.8em;
+}
+
+.sub-menu a {
+text-transform: none;
+}
+
+/* Small menu for @media size changes */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
