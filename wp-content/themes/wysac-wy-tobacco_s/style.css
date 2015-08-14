@@ -934,6 +934,45 @@ background-color:lightgreen;
 }
 
 /*--------------------------------------------------------------
+## Archives
+--------------------------------------------------------------*/
+/* Add the Post Format (Resources) & Category (Publications) Icon before the Titles*/
+
+.archive .entry-title:before { /* Make some space for the icon */
+	display: inline-block;
+	content:" ";
+	width:40px;
+}
+
+/* Icons for "resources" category archive */
+.archive .format-quote .entry-title:before { /* Quote Post Type */
+	content: url(http://placehold.it/32x32/cbb345);
+}
+.archive .format-link .entry-title:before { /* Link Post Type */
+	content: url(http://placehold.it/32x32/008c8e);
+}
+.archive .format-video .entry-title:before { /* Video Post Type */
+	content: url(http://placehold.it/32x32/428bca);
+}
+.archive .format-image .entry-title:before { /* Image Post Type */
+	content: url(http://placehold.it/32x32/af420a);
+}
+
+/* Icons for "Publications" category archive
+ * These types are sorted by sub-categories, not post types
+*/
+.archive .category-reports .entry-title:before { /* pubs/ REPORTS */
+	content: url(http://placehold.it/32x32/41b878);
+}
+.archive .category-fact-sheets .entry-title:before { /* pubs/FACT SHEETS */
+	content: url(http://placehold.it/32x32/c27d38);
+}
+.archive .category-briefs .entry-title:before { /* pubs/ BRIEFS */
+	content: url(http://placehold.it/32x32/8d9876);
+}
+
+
+/*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
 .comment-content a {
