@@ -27,11 +27,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Typography
 # Elements
 # Forms
-#Page Structure
-	##Containers
+# Page Structure
+	## Containers
+		### Primary Content Area
+		### Secondary, Widget Area
+		### Footer Area
 # Navigation
 	## Links
+	## Masthead/Branding Links
 	## Menus
+		### Sub-menu
+	## Small Menu - Collapse Main Navigation
 # Accessibility
 # Alignments
 # Clearings
@@ -524,6 +530,28 @@ overflow-x: hidden;
 	background:rgb(241, 233, 230);
 }
 
+/*--------------------------------------------------------------
+### Primary Content Area
+--------------------------------------------------------------*/
+.content-area {
+	float:left;
+	max-width:70%;
+	padding:2em 0;
+	margin-right:5%;
+}
+
+/*--------------------------------------------------------------
+### Secondary, Widget Area
+--------------------------------------------------------------*/
+.widget-area {
+	float:left;
+	width:25%;
+	min-width:150px;
+	padding:2em 0;
+}
+/*--------------------------------------------------------------
+### Footer Area
+--------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
@@ -532,9 +560,14 @@ overflow-x: hidden;
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a, a:hover, a:active, a:visited{
+a, a:hover, a:visited{
 	color: rgb(194, 125, 56);
 	padding:1px 2px;
+}
+
+a:active {
+	text-decoration:none;
+	color: rgb(194, 125, 56);
 }
 
 a:hover {
@@ -664,7 +697,9 @@ font-size: 0.65em;
 	background-color: rgb(122, 75, 45);
 }
 
-
+/*--------------------------------------------------------------
+### Sub-Menus
+--------------------------------------------------------------*/
 /* Sub Menu under the main navigation */
 ul.sub-menu {
 	background-color:rgb(129, 90, 65);
@@ -676,6 +711,9 @@ ul.sub-menu {
 text-transform: none;
 }
 
+/*--------------------------------------------------------------
+## Small Menu - Collapse Main Navigation
+--------------------------------------------------------------*/
 /* Small menu for @media size changes */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -800,6 +838,13 @@ text-transform: none;
 --------------------------------------------------------------*/
 .widget {
 	margin: 0 0 1.5em;
+	border:solid thin lightgray;
+	border-left:solid 2px red;
+	padding: 0 0.5em;
+}
+
+.widget-title {
+	margin: 0.2em 0;
 }
 
 /* Make sure select elements fit in widgets. */
