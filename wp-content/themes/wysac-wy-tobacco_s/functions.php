@@ -104,13 +104,51 @@ function wysac_wy_tobacco_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'wysac-wy-tobacco' ),
 		'id'            => 'sidebar-1',
-		'description'   => '',
+		'description'   => 'Primary, Default Sidebar',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'					=> esc_html__('Front Page Sidebar 1', 'wysac-wy-tobacco'),
+		'id'            => 'front-sidebar-1',
+		'description'   => 'Front page sidebar for site description',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	));
+	register_sidebar( array(
+		'name'					=> esc_html__('Front Page Sidebar 2', 'wysac-wy-tobacco'),
+		'id'            => 'front-sidebar-2',
+		'description'   => 'Front page sidebar for 3 columns',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	));
+	register_sidebar( array(
+		'name'					=> esc_html__('Front Page Sidebar 3', 'wysac-wy-tobacco'),
+		'id'            => 'front-sidebar-3',
+		'description'   => 'Full width sidebar',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	));
+	register_sidebar( array(
+		'name'					=> esc_html__('Report Sidebar', 'wysac-wy-tobacco'),
+		'id'            => 'report-sidebar',
+		'description'   => 'Content for sidebar on report posts',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	));
 }
+
+
 add_action( 'widgets_init', 'wysac_wy_tobacco_widgets_init' );
 
 /**

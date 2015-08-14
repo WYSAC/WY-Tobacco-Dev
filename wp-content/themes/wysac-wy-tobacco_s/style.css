@@ -543,7 +543,7 @@ overflow-x: hidden;
 }
 
 /*--------------------------------------------------------------
-### Secondary, Widget Area
+### Secondary, Default Widget Area
 --------------------------------------------------------------*/
 .widget-area {
 	float:left;
@@ -551,6 +551,29 @@ overflow-x: hidden;
 	min-width:150px;
 	padding:2em 0;
 }
+
+/*--------------------------------------------------------------
+### Front Page widget Areas and Content
+--------------------------------------------------------------*/
+#front-sidebar-1 {
+	float:left;
+	width:25%;
+	height:300px;
+	border:solid 3px red;
+}
+#front-sidebar-2 {
+	display:block;
+	clear:both;
+	float:left;
+	width:100%;
+	border:solid 3px blue;
+}
+#front-sidebar-3 {
+	float:left;
+	width:100%;
+	border:solid 3px green;
+}
+
 /*--------------------------------------------------------------
 ### Footer Area
 --------------------------------------------------------------*/
@@ -902,6 +925,10 @@ text-transform: none;
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.category-resources .entry-footer {
+display:none;
 }
 
 /*--------------------------------------------------------------
