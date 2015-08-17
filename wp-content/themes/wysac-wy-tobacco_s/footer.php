@@ -14,10 +14,9 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wysac-wy-tobacco' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'wysac-wy-tobacco' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'wysac-wy-tobacco' ), 'wysac-wy-tobacco', '<a href="http://underscores.me/" rel="designer">Jessica Schillinger</a>' ); ?>
+		<div class="site-info text-center">
+			&#169;<?php the_time('Y');?> <a href="http://wwww.uwyo.edu/wysac">Wyoming Survey & Analysis Center,</a> <a href="http://www.uwyo.edu">University of Wyoming</a> |
+			<img src="https://s.w.org/about/images/logos/wordpress-logo-32.png" width="20" style="padding-bottom:3px;" > Powered by <a href="http://www.wordpress.org">WordPress</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

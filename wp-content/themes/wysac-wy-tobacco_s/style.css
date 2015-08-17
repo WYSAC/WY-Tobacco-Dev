@@ -591,8 +591,25 @@ overflow-x: hidden;
 	margin:0 -15%;  /* move the content over */
 	padding:1em 15%;
 	background-color: rgb(35, 40, 45);
-	color:white;
+	color:rgb(205, 205, 205);
 }
+
+.site-info {
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size:0.9em;
+	letter-spacing: 0.1em;
+}
+.site-info a {
+	color:rgb(205,205,205);
+}
+.site-info a:hover,
+.site-info a:active,
+.site-info a:visited {
+	background-color:transparent;
+	text-decoration: underline;
+	color:rgb(205, 205, 205);
+}
+
 
 /*--------------------------------------------------------------
 # Navigation
