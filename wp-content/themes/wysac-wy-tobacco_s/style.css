@@ -590,20 +590,20 @@ overflow-x: hidden;
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a, a:hover, a:visited{
+a, a:hover, a:active, a:visited, a:focus{
 	color: rgb(194, 125, 56);
 	padding:1px 2px;
+	text-decoration: none;
 }
 
 a:active {
-	text-decoration:none;
 	color: rgb(194, 125, 56);
 }
 
 a:hover {
 background-color: rgb(249, 242, 237);
-text-decoration: none;
 }
+
 a:focus {
 	outline: thin dotted;
 }
@@ -940,16 +940,26 @@ display:none;
 	text-transform:uppercase;
 }
 
-.posted-on a, .author a {
+.author a {
 	font-weight:700;
-	color:green;
+	color:rgb(37, 116, 159);
 }
-.posted-on a:active,
-.posted-on a:hover,
+
+.posted-on a {
+	color:rgb(59, 59, 59);
+}
+
 .author a:active,
-.author a:hover {
-background-color:lightgreen;
+.author a:hover,
+.posted-on a:hover,
+.posted-on a:active {
+	background-color: transparent;
+	text-decoration: underline;
+
 }
+
+
+
 
 
 /*--------------------------------------------------------------

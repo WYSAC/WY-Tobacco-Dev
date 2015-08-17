@@ -14,7 +14,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php wysac_wy_tobacco_posted_on(); ?>
+			<?php wysac_wy_tobacco_posted_on();?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -32,4 +32,3 @@
 		<?php wysac_wy_tobacco_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-
