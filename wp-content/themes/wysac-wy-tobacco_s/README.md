@@ -1,5 +1,9 @@
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
+WY Tobacco _s Theme
+===
+This is a custom version of the _s theme (see below).  It was created for the Wyoming Tobacco Prevention and Control Evaluation project revision, fall 2015.  This project was produced by the Wyoming Survey & Analysis Center for the Wyoming Department of Health.
+
 _s
 ===
 
