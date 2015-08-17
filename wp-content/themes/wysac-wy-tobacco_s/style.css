@@ -930,6 +930,22 @@ text-transform: none;
 .category-resources .entry-footer {
 display:none;
 }
+/* Name of the Category Above the Title in Publications */
+/* Name of Post Format above the Title on Resource Posts */
+
+a.category-label, .post-format-label{
+	background-color:rgb(37, 116, 159);
+	color:white;
+	padding:0.4em 0.8em;
+	margin:0 0;
+	font-family:'Open Sans', 'Arial', sans-serif;
+	font-size:0.78em;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+a:hover.category-label{
+	background-color:rgb(122, 184, 217);
+}
 
 /*--------------------------------------------------------------
 ### Entry Meta Data Format
