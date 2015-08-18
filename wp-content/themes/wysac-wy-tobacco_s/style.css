@@ -310,6 +310,10 @@ h1.entry-title {
 	margin:0.8em 0 0.4em 0;
 }
 
+.page-header {
+	border:none;
+}
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -588,8 +592,11 @@ overflow-x: hidden;
 ### Footer Area
 --------------------------------------------------------------*/
 .site-footer {
-	margin:0 -15%;  /* move the content over */
-	padding:1em 15%;
+	width:125%;
+	position:fixed;
+	bottom:0;
+	margin-left: -20%;
+	padding: 0.7em 0;
 	background-color: rgb(35, 40, 45);
 	color:rgb(205, 205, 205);
 }
@@ -957,6 +964,17 @@ text-transform: none;
 .category-resources .entry-footer {
 display:none;
 }
+
+.entry-footer {
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size:0.7em;
+	text-transform: uppercase;
+	border-top: solid 1px rgb(198, 198, 198);
+	letter-spacing: 2px;
+	padding-top: 5px;
+}
+
+
 /* Name of the Category Above the Title in Publications */
 /* Name of Post Format above the Title on Resource Posts */
 
