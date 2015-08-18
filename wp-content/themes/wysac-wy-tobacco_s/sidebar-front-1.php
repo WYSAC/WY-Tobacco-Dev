@@ -1,5 +1,7 @@
 <!--
 Front Page Sidebar 1: Site Description next to slider
+
+Page: 1. Top Description Sidebar
 -->
 
 <div id="front-sidebar-1">

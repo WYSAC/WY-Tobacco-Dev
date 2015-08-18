@@ -1,5 +1,7 @@
 <!--
-Front Page Sidebar 1: Site Description next to slider
+Front Page Sidebar 2: 3-col middle sidebar
+
+Page: 2. 3-Col Sidebar
 -->
 
 <div id="front-sidebar-2">
