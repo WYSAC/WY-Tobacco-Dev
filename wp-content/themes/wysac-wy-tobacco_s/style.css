@@ -552,7 +552,6 @@ overflow-x: hidden;
 .content-area {
 	float:left;
 	max-width:70%;
-	padding:2em 0;
 	margin-right:5%;
 }
 
@@ -567,12 +566,13 @@ overflow-x: hidden;
 }
 
 /*--------------------------------------------------------------
-### Front Page widget Areas and Content
+### Front Page Sidebar Areas and Content
 --------------------------------------------------------------*/
 #front-sidebar-1 {
 	float:left;
+	margin-top: 1.5em;
 	width:25%;
-	height:300px;
+	max-height:15%;
 	border:solid 3px red;
 }
 #front-sidebar-2 {
@@ -583,6 +583,7 @@ overflow-x: hidden;
 	border:solid 3px blue;
 }
 #front-sidebar-3 {
+	margin-top: 1.5em;
 	float:left;
 	width:100%;
 	border:solid 3px green;
@@ -900,7 +901,7 @@ text-transform: none;
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-/* layout and location of widgets are styled in the "Page Structure" section */
+/* layout and location of sidebars are styled in the "Page Structure" section */
 
 .widget {
 	margin: 0 0 1.5em;
