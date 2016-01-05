@@ -9,7 +9,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+
+	<div id="primary" class="content-area  col-md-12">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -22,8 +23,9 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<?php get_sidebar('front-1');?>
-		<?php get_sidebar('front-2');?>
-	<?php get_sidebar('front-3');?>
+
+	<div id="homepage-sidebar" class="widget-area col-md-4">
+	<?php dynamic_sidebar( 'homepage-sidebar' ); ?>
+	</div>
 
 <?php get_footer(); ?>

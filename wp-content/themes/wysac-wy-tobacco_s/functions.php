@@ -111,27 +111,9 @@ function wysac_wy_tobacco_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'					=> esc_html__('Front Page Sidebar 1', 'wysac-wy-tobacco'),
-		'id'            => 'front-sidebar-1',
-		'description'   => 'Front page sidebar for site description',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	));
-	register_sidebar( array(
-		'name'					=> esc_html__('Front Page Sidebar 2', 'wysac-wy-tobacco'),
-		'id'            => 'front-sidebar-2',
-		'description'   => 'Front page sidebar for 3 columns',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	));
-	register_sidebar( array(
-		'name'					=> esc_html__('Front Page Sidebar 3', 'wysac-wy-tobacco'),
-		'id'            => 'front-sidebar-3',
-		'description'   => 'Full width sidebar',
+		'name'					=> esc_html__('Homepage Sidebar', 'wysac-wy-tobacco'),
+		'id'            => 'homepage-sidebar',
+		'description'   => 'Content for sidebar on home page posts',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -141,6 +123,33 @@ function wysac_wy_tobacco_widgets_init() {
 		'name'					=> esc_html__('Report Sidebar', 'wysac-wy-tobacco'),
 		'id'            => 'report-sidebar',
 		'description'   => 'Content for sidebar on report posts',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	));
+	register_sidebar( array(
+		'name'					=> esc_html__('Footer Sidebar 1', 'wysac-wy-tobacco'),
+		'id'            => 'footer-sidebar-1',
+		'description'   => 'Content for footer 1.  Appears on all pages',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	));
+	register_sidebar( array(
+		'name'					=> esc_html__('Footer Sidebar 2', 'wysac-wy-tobacco'),
+		'id'            => 'footer-sidebar-2',
+		'description'   => 'Content for footer 2.  Appears on all pages',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	));
+	register_sidebar( array(
+		'name'					=> esc_html__('Footer Sidebar 3', 'wysac-wy-tobacco'),
+		'id'            => 'footer-sidebar-3',
+		'description'   => 'Content for footer 3.  Appears on all pages',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
