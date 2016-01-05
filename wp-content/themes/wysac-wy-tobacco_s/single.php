@@ -31,9 +31,9 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-			if ( in_category(3) ) { ?>
-				<?php get_sidebar ('pub'); ?>
-			<?php } else { ?>
-				<?php get_sidebar(); ?>
-			<?php } ?>
+			if ( in_category(3) ) {
+				get_sidebar ('pub'); }
+			else {
+				get_sidebar('resource');
+			} ?>
 <?php get_footer(); ?>

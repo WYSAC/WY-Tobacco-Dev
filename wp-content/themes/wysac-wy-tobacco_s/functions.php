@@ -120,9 +120,9 @@ function wysac_wy_tobacco_widgets_init() {
 		'after_title'   => '</h2>',
 	));
 	register_sidebar( array(
-		'name'					=> esc_html__('Report Sidebar', 'wysac-wy-tobacco'),
-		'id'            => 'report-sidebar',
-		'description'   => 'Content for sidebar on report posts',
+		'name'					=> esc_html__('Resource Sidebar', 'wysac-wy-tobacco'),
+		'id'            => 'resource-sidebar',
+		'description'   => 'Content for sidebar on resource posts and archive',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',

@@ -48,5 +48,10 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+	<?php
+				if ( in_category(1) ) {
+					get_sidebar ('resource'); }
+				else {
+					get_sidebar('archive');
+				} ?>
 <?php get_footer(); ?>

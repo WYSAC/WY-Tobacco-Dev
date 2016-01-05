@@ -11,29 +11,19 @@
 ?>
 <div id="sidebar-pub" class="widget-area col-md-4 recent-entries">
 	<div class="widget">
-		<h2 class="widget-title">Blurb</h2>
-			<p>this is probably a call to a custom field in the post</p>
+		<h2 class="widget-title">About This Report</h2>
+			<p><?php // display custom fields
+							global $wp_query;
+							$postid = $wp_query->post->ID;
+						        echo get_post_meta($postid, 'pub_description', true);
+							wp_reset_query();
+							?>
+						</p>
 		</div>
 
 		<div class="widget">
 			<h2 class="widget-title">Related Topics</h2>
-				<ul>
-				<?php
-				$args = array(
-					'posts_per_page' => 5,
-					'offset'=> 0,
-					'category' => 1 );
-
-				$myposts = get_posts( $args );
-
-				foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-					<li>
-						<span class="post-date"><?php the_time('m.d.Y');?></span>
-						<br/> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-					</li>
-				<?php endforeach;
-				wp_reset_postdata();?>
-				</ul>
+					<?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
 		</div>
 	</div>
 

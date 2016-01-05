@@ -81,7 +81,7 @@ Sidebars can be coded or dynamic.  Coded sidebars are directly in the sidebar te
       - Recent Resources  :  coded
 
     > pub <
-      - About publication : dynamic_sidebar
+      - About publication : custom field from post
       - Related Topics (tags of post)  :  coded
 
     > resource <
