@@ -917,32 +917,32 @@ text-transform: none;
 }
 
 /* Cateogry Post Plug-in widget. */
-.cat-post-widget .widget-title {
+.recent-entries .widget-title {
 		border-top:thin dotted black;
 		padding-top:2.2em;
 }
-.cat-post-widget  ul {
+.recent-entries ul {
 	list-style: none;
 	margin: 0 auto;
 	padding:0 0;
 }
 
-.cat-post-widget li {
+.recent-entries li {
 	padding-bottom:0.5em;
 }
 
-.cat-post-widget  .post-date {
+.recent-entries .post-date {
 	font-weight: bold;
 	color:rgb(151,139,134);
 	font-size:0.8em;
 }
 
-.cat-post-widget  a:link,
-.cat-post-widget a:active,
-.cat-post-widget a:visited {
+.recent-entries a:link,
+.recent-entries a:active,
+.recent-entries a:visited {
 	color:rgb(74,74,74);
 }
-.cat-post-widget a:hover {
+.recent-entries a:hover {
 	color:rgb(194, 125, 56)
 }
 

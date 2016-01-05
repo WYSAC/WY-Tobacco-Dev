@@ -24,8 +24,9 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<div id="homepage-sidebar" class="widget-area col-md-4">
+<div id="homepage-sidebar" class="widget-area col-md-4">
 	<?php dynamic_sidebar( 'homepage-sidebar' ); ?>
+	<?php get_sidebar('homepage');?>
 	</div>
 
 <?php get_footer(); ?>

@@ -30,5 +30,10 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php
+			if ( in_category(3) ) { ?>
+				<?php get_sidebar ('pub'); ?>
+			<?php } else { ?>
+				<?php get_sidebar(); ?>
+			<?php } ?>
 <?php get_footer(); ?>
