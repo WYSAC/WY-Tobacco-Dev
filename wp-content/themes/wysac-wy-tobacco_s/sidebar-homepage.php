@@ -9,6 +9,7 @@
 
 
 ?>
+<?php dynamic_sidebar( 'homepage-sidebar' ); ?>
 <div class="widget recent-entries">
 		<h2 class="widget-title">Recent Publications</h2>
 			<ul>

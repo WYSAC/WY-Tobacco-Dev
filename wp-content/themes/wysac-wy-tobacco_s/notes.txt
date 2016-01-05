@@ -2,7 +2,7 @@ HELPFUL NOTES
 WYSAC Wyoming Tobacco Project
 
 
-|| CONTENT WRANGLING ||
+|| GENERAL CONTENT WRANGLING ||
 
 Content is divided into two categories, utilizing post-types, sub-categories and tags to wrangle content and reference within page templates.
 
@@ -50,7 +50,6 @@ There are three types of permalinks based on the type of URL:
 3. Tags           :   /topics/tag
 
 
-
 || SIDEBARS ||
 
 There are 5 sidebar templates to control what information appears in the right column for each type of page.
@@ -95,3 +94,14 @@ Sidebars can be coded or dynamic.  Coded sidebars are directly in the sidebar te
     > about <
       - Need Help? : coded
       - WYSAC blurb ; dynamic_sidebar
+
+|| HOMEPAGE CONTENT ||
+
+* Main Text *
+This text is be changed by editing the Home Page under Pages.  This page is set as the Front Page of the WP site in settings.
+
+* Right Sidebar *
+The recent lists in the sidebar are hard coded in the side-homepage.php template.  The promo image at the top is a Widget and can be edited by visiting Appearance / Widgets / Homepage Promo Image.
+
+* Baseball Cards *
+The baseball cards are in a dynamic widget area.  

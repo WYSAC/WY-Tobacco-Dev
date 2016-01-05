@@ -8,10 +8,12 @@
  */
 
 get_header(); ?>
-
-
-	<div id="primary" class="content-area  col-md-12">
+<div id="gallery-slider">
+				<img src="http://www.wytobacco.dev/wp-content/uploads/2016/01/0lu4vo5ifpm-greg-rakozy.jpg" width="100%">
+		</div>
+	<div id="primary" class="content-area col-md-8">
 		<main id="main" class="site-main" role="main">
+
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -20,13 +22,19 @@ get_header(); ?>
 <!--there are no comments on pages-->
 
 			<?php endwhile; // End of the loop. ?>
-
-		</main><!-- #main -->
+<!--Link Areas -->
+		<div class="container">
+			<div class="row">
+				<?php get_sidebar('homepage-linkarea');?>
+				<?php dynamic_sidebar('home-linkarea-1'); ?>
+			</div>
+			<div class="widget row">
+				<?php dynamic_sidebar('home-linkarea-2'); ?>
+		</div>
+	</div>
+		</main> <!-- #main -->
 	</div><!-- #primary -->
-
-<div id="homepage-sidebar" class="widget-area col-md-4">
-	<?php dynamic_sidebar( 'homepage-sidebar' ); ?>
+<div id="homepage-sidebar" class="widget-area">
 	<?php get_sidebar('homepage');?>
 	</div>
-
 <?php get_footer(); ?>
