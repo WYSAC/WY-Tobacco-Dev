@@ -14,8 +14,8 @@
 		<h2 class="widget-title">Blurb</h2>
 			<p>this is probably a call to a custom field in the post</p>
 		</div>
-		<div class="widget">
 
+		<div class="widget">
 			<h2 class="widget-title">Related Topics</h2>
 				<ul>
 				<?php
@@ -37,4 +37,4 @@
 		</div>
 	</div>
 
-<!--#secondary-->
+<!-- #secondary-->
