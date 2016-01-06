@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-<div id="gallery-slider">
-				<img src="http://www.wytobacco.dev/wp-content/uploads/2016/01/0lu4vo5ifpm-greg-rakozy.jpg" width="960">
+<div id="slider">
+	<?php dynamic_sidebar('slider');?>
 		</div>
 	<div id="primary" class="content-area col-md-8">
 		<main id="main" class="site-main" role="main">

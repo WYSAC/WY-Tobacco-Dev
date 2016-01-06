@@ -547,12 +547,61 @@ overflow-x: hidden;
 }
 
 /*--------------------------------------------------------------
+### Slider  Content Area - Before Primary
+--------------------------------------------------------------*/
+/*
+*  Formatting for Flexslider widget
+*/
+#slider {
+	margin-top:0.5em;
+	width:100%;
+}
+
+#recent-posts-flexslider-2 .flexslider {
+	margin:0 0;
+	max-height:450px;
+}
+
+#recent-posts-flexslider-2 .flexslider .slides img {
+	height:auto;
+}
+
+h3.flexslider-title {
+	display:none;
+}
+
+ol.flex-control-nav{
+	bottom:10px;
+}
+
+#recent-posts-flexslider-2 .flexslider-caption {
+	background-color:transparent;
+	bottom:175px;
+	width:90%;
+	float:left;
+}
+
+#recent-posts-flexslider-2 .flexslider-caption-inner {
+	text-align:left;
+	padding: 0 2em;
+	font-size:1.2em;
+	font-family:'Open Sans', Arial, sans-serif;
+	text-shadow: 2px 2px 10px #000000;
+}
+#recent-posts-flexslider-2 .flexslider-caption-inner h3 {
+	font-size:1.75em;
+	font-family:'Merriweather', 'Georgia', 'serif';
+	line-height: 1.25em;
+	margin-bottom:7px;
+}
+/*--------------------------------------------------------------
 ### Primary Content Area
 --------------------------------------------------------------*/
 .content-area {
 	float:left;
 	max-width:70%;
 	margin-right:5%;
+	padding:2em 0;
 }
 
 /*--------------------------------------------------------------

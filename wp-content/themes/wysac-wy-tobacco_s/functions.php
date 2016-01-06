@@ -111,7 +111,16 @@ function wysac_wy_tobacco_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'					=> esc_html__('Homepage - Promo Image', 'wysac-wy-tobacco'),
+		'name'					=> esc_html__('Homepage - Slider', 'wysac-wy-tobacco'),
+		'id'            => 'slider',
+		'description'   => 'Content for sidebar on home page posts',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	));
+	register_sidebar( array(
+		'name'					=> esc_html__('Homepage - Sidebar Promo Image', 'wysac-wy-tobacco'),
 		'id'            => 'homepage-sidebar',
 		'description'   => 'Content for sidebar on home page posts',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -119,6 +128,7 @@ function wysac_wy_tobacco_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	));
+
 	register_sidebar( array(
 		'name'					=> esc_html__('Homepage - Link Area 1', 'wysac-wy-tobacco'),
 		'id'            => 'home-linkarea-1',
