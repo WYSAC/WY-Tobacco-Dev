@@ -41,6 +41,7 @@ function wysac_wy_tobacco_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'linkarea-feature', 300, 150, array('center', 'center'));
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -246,3 +247,7 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+* Custom Image Sizes
+*/

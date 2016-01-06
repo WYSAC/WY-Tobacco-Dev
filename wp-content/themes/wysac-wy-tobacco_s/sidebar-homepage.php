@@ -23,7 +23,7 @@
 
 			foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 				<li>
-					<span class="post-date"><?php the_time('m.d.Y');?></span>
+					<span class="post-date linkarea"><?php the_time('m.d.Y');?></span>
 					<br/> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 				</li>
 			<?php endforeach;
