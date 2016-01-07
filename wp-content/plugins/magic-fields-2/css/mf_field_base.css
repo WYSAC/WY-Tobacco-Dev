@@ -54,7 +54,7 @@ label > span { float:left; }
 .mf_group .delete_duplicate_field:hover span, .mf-group-wrapper .delete_duplicate_button:hover span { color: #802727; }
 
 /** duplicate group **/
-.mf_group .mf_toolbox { 
+.mf_group .mf_toolbox {
   height: 22px;
   padding-left: 8px;
   padding-right: 8px;
@@ -64,23 +64,23 @@ label > span { float:left; }
   border-bottom: 1px solid #EAEAEA;
   cursor: move;
 }
-.mf_group .mf_toolbox { 
+.mf_group .mf_toolbox {
   padding-top: 4px;
   padding-left: 10px;
   padding-right: 5px;
   height: 21px;
 }
-.mf-group-wrapper .mf_duplicate_group:hover .mf_toolbox { 
+.mf-group-wrapper .mf_duplicate_group:hover .mf_toolbox {
   background-color: #FAFAFA;
-  border-top-color: #F2F2F2; 
+  border-top-color: #F2F2F2;
 }
-.mf_group .mf_toolbox_controls { 
+.mf_group .mf_toolbox_controls {
   float: right;
   overflow: hidden;
   zoom: 100%;
   padding-right: 4px;
 }
-.mf-group-wrapper .mf-counter { 
+.mf-group-wrapper .mf-counter {
   background-image: url(../images/mf-toolbox-mf-counter.png);
   color: #FFF;
   font-weight: bold;
@@ -91,19 +91,19 @@ label > span { float:left; }
   line-height: 16px;
   cursor: move;
 }
-.mf_group .mf_toolbox_controls a { 
+.mf_group .mf_toolbox_controls a {
   font-size: 10px;
 }
 .mf_group .mf_toolbox_controls a,
-.mf_group .mf-counter { 
+.mf_group .mf-counter {
   float: left;
   background-repeat: no-repeat;
   display: block;
 }
-.row_mf { 
+.row_mf {
 float: left;
 }
-.mf-group-wrapper .mf_toolbox .hndle { 
+.mf-group-wrapper .mf_toolbox .hndle {
   background: url(../images/mf-toolbox-hndle.png) no-repeat 1px 3px;
   width: 12px;
   height: 16px;
@@ -141,10 +141,10 @@ float: left;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 28px;
-  background-position: 6px 4px; 
+  background-position: 6px 4px;
 }
 /* textbox field*/
-.text_field_mf input { width: 50%; }
+.text_field_mf input { width: 90%; }
 
 
 /* checkbox list*/
@@ -164,7 +164,7 @@ margin-right: 5px; margin-top: 0px;}
 .mf-field-ui .datebotton_mf, .mf-field-ui .todaybotton_mf, .mf-field-ui .blankBotton_mf{ display: inline; margin-right: 1px; margin-left:1px; }
 
 /* Radio List Field **/
-.mf_group label.mf-radio-field{  font-weight: normal; padding-top:3px; font-size:12px; } 
+.mf_group label.mf-radio-field{  font-weight: normal; padding-top:3px; font-size:12px; }
 .mf_group label.mf-radio-field input { float:left; margin-right: 5px; margin-top: 0; position:relative; }
 
 
@@ -228,7 +228,7 @@ textarea.mf_editor { width: 99%; padding: 8px;}
 }
 
 /**
- * File upload 
+ * File upload
  * @todo put this into the file field css
  */
 
@@ -325,7 +325,7 @@ background-repeat: no-repeat;
 }
 .mf-upload-success {
   color: #11A122;
-  background-image: url(../images/mf-upload-success.png); 
+  background-image: url(../images/mf-upload-success.png);
 }
 .mf-upload-error {
 color: #9E1111;

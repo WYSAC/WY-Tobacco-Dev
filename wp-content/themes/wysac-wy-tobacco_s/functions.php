@@ -42,6 +42,7 @@ function wysac_wy_tobacco_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'linkarea-feature', 300, 150, array('center', 'center'));
+	add_image_size( 'entry-feature-large', 9999, 250, true);
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

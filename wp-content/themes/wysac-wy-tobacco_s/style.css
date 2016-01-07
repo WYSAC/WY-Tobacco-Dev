@@ -288,6 +288,9 @@ textarea {
 /*--------------------------------------------------------------
 ## Headers
 --------------------------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+	padding:0.7em 0;
+}
 
 h1,
 .site-title {
@@ -314,7 +317,7 @@ h4 {
 	font-weight: bold;
 }
 h5 {
-		font-family:'Open San', 'Franklin Gothic', Arial, sans-serif;
+		font-family:'Open Sans', 'Franklin Gothic', Arial, sans-serif;
 		color:rgb(132,132,132);
 		font-weight:bold;
 		font-size:1.1em;
@@ -326,7 +329,9 @@ blockquote {
 	font-style: italic;
 	font-size:1em;
 }
-h6 {font-weight:bold;}
+h6 {
+	font-weight:bold;
+}
 
 
 
@@ -340,9 +345,10 @@ h6 {font-weight:bold;}
 .entry-title {
 	font-family:'Merriweather', 'Georgia', serif;
 	font-weight:bold;
-	line-height: 125%;
+	line-height: 150%;
 	font-size: 2.25em;
 	margin:0.8em 0 0.4em 0;
+	padding:0 0;
 }
 
 .entry-subtitle {
@@ -350,9 +356,10 @@ h6 {font-weight:bold;}
 	font-weight:normal;
 	font-style: italic;
 	font-size: 1.6em;
-	line-height: 125%;
+	line-height: 135%;
 	color:rgb(132,132,132);
 	margin:0.8em 0 0.4em 0;
+	padding:0 0;
 }
 
 /*--------------------------------------------------------------
@@ -364,7 +371,8 @@ h1.home-page-heading {
 	margin-top:-1em;
 	padding-top:0;
 	color:rgb(185,107,50);
-	line-height: 130%;
+	line-height: 150%;
+	padding: 0 0;
 }
 
 .feature {
@@ -657,6 +665,8 @@ ol.flex-control-nav{
 	font-family:'Merriweather', 'Georgia', 'serif';
 	line-height: 1.25em;
 	margin-bottom:7px;
+	text-transform:none;
+	padding: 0 0;
 }
 /*--------------------------------------------------------------
 ### Primary Content Area
@@ -669,7 +679,7 @@ ol.flex-control-nav{
 ### Secondary, Default Widget Area
 --------------------------------------------------------------*/
 .widget-area {
-	/*padding:0 2em 0 5em;*/
+	padding:0 2em 0 5em;
 }
 
 
@@ -1054,6 +1064,10 @@ text-transform: none;
 	color:rgb(194, 125, 56)
 }
 
+/*fix the layout of the pub sidebar with the label and photo */
+#sidebar-pub {
+	margin-top:1.20em;
+}
 /* Link Area Widgets on Home Page */
 .linkarea .widget-title {
 	padding:1em 0 0.5em;
@@ -1163,6 +1177,11 @@ ul#menu-footer-menu {
 	line-height: 200%;
 }
 
+.attachment-entry-feature-large {
+	height:250px;
+	margin-top:0.8em;
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
@@ -1186,7 +1205,7 @@ display:none;
 /* Name of Post Format above the Title on Resource Posts */
 
 a.category-label, .post-format-label{
-	background-color:rgb(37, 116, 159);
+	background-color:rgb(151,139,134);
 	color:white;
 	padding:0.4em 0.8em;
 	margin:0 0;
@@ -1196,7 +1215,7 @@ a.category-label, .post-format-label{
 	letter-spacing: 0.2em;
 }
 a:hover.category-label{
-	background-color:rgb(122, 184, 217);
+	background-color:rgb(101, 95, 92);
 }
 
 /*--------------------------------------------------------------
@@ -1225,9 +1244,6 @@ a:hover.category-label{
 	text-decoration: underline;
 
 }
-
-
-
 
 
 /*--------------------------------------------------------------

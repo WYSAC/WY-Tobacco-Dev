@@ -13,9 +13,10 @@
 	<header class="entry-header">
 		<?php  /* Get the Child Category and Print it only in Publications*/
 			foreach((get_the_category()) as $childcat) {
-					if (cat_is_ancestor_of(2, $childcat)) {
-					echo '<a class="category-label" href="'.get_category_link($childcat->cat_ID).'">';
-					 echo $childcat->cat_name . '</a><br/>';
+					if (cat_is_ancestor_of(2, $childcat) && has_post_thumbnail() ) {
+						echo '<a class="category-label" href="'.get_category_link($childcat->cat_ID).'">';
+					 	echo $childcat->cat_name . '</a><br/>';
+						echo the_post_thumbnail('entry-feature-large');
 				 	}
 				 else echo '<span class="post-format-label">' .get_post_format(). '</span>';
 			 }
