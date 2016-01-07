@@ -8,9 +8,9 @@
  */
 
 get_header(); ?>
-
+<div class="row">
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main col-md-8" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -34,4 +34,5 @@ get_header(); ?>
 			else {
 				get_sidebar('resource');
 			} ?>
+</div><!--.row-->
 <?php get_footer(); ?>

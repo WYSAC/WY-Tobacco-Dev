@@ -8,13 +8,11 @@
  */
 
 get_header(); ?>
-<div class="container">
-	<div class="row">
-		<div id="slider">
-			<?php dynamic_sidebar('slider');?>
-				</div>
-			</div><!--top .row-->
-			<div class="row">
+
+<div id="slider">
+	<?php dynamic_sidebar('slider');?>
+		</div>
+<div class="row">
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main col-md-8" role="main">
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -30,10 +28,7 @@ get_header(); ?>
 								<?php get_sidebar('home-linkarea');?>
 							</div>
 			</main> <!-- #main .col-md-12 -->
-			<div id="homepage-sidebar" class="widget-area col-md-4">
 				<?php get_sidebar('home');?>
-		</div><!--#homepage-sidebar .col-md-4-->
 	</div><!-- #primary-->
 </div><!--.row-->
-</div><!-- .container -->
 <?php get_footer(); ?>

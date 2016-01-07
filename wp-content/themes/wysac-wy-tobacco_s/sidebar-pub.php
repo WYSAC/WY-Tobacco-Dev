@@ -12,7 +12,7 @@
 <div id="sidebar-pub" class="widget-area col-md-4 recent-entries">
 	<div class="widget">
 		<h2 class="widget-title">About This Report</h2>
-			<p><?php // display custom fields
+			<p><?php // display description custom 
 							global $wp_query;
 							$postid = $wp_query->post->ID;
 						        echo get_post_meta($postid, 'pub_description', true);

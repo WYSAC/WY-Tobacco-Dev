@@ -124,10 +124,6 @@ dfn {
 	font-style: italic;
 }
 
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
-}
 
 mark {
 	background: #ff0;
@@ -289,27 +285,79 @@ textarea {
 	line-height: 1.5;
 	font-family:'Merriweather', 'Georgia', serif;
 }
+/*--------------------------------------------------------------
+## Headers
+--------------------------------------------------------------*/
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6, .site-title {
+.site-title {
 	font-family:'Montserrat', 'Franklin Gothic', 'Helvetica', 'Arial', sans-serif;
 	clear: both;
+	font-size:1.9em;
 }
 
+h2 {
+		font-family:'Merriweather', 'Georgia', serif;
+		color:rgb(132,132,132);
+		font-size:1.5em;
+		font-style:italic;
+}
+
+h3 {
+		font-family:'Montserrat', 'Franklin Gothic', 'Helvetica', 'Arial', sans-serif;
+		text-transform:uppercase;
+		font-size:1.3em;
+}
+h4 {
+	font-family:'Merriweather', 'Georgia', serif;
+	font-size:1.1em;
+	font-weight: bold;
+}
+h5 {
+		font-family:'Open San', 'Franklin Gothic', Arial, sans-serif;
+		color:rgb(132,132,132);
+		font-weight:bold;
+		font-size:1.1em;
+}
+
+h6,
+blockquote {
+	font-family:'Merriweather', 'Georgia', serif;
+	font-style: italic;
+	font-size:1em;
+}
+h6 {font-weight:bold;}
+
+
+
+/*--------------------------------------------------------------
+## Specific Headings for Posts and Pages and other Areas
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+### Posts
+--------------------------------------------------------------*/
 .entry-title {
 	font-family:'Merriweather', 'Georgia', serif;
 	font-weight:bold;
 	line-height: 125%;
-}
-h1.entry-title {
 	font-size: 2.25em;
 	margin:0.8em 0 0.4em 0;
 }
 
+.entry-subtitle {
+	font-family:'Merriweather', 'Georgia', serif;
+	font-weight:normal;
+	font-style: italic;
+	font-size: 1.6em;
+	line-height: 125%;
+	color:rgb(132,132,132);
+	margin:0.8em 0 0.4em 0;
+}
+
+/*--------------------------------------------------------------
+### Home Headings and Text
+--------------------------------------------------------------*/
 h1.home-page-heading {
 	font-weight:normal;
 	font-family:'Open Sans', Arial, sans-serif;
@@ -323,6 +371,8 @@ h1.home-page-heading {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-size:1em;
 }
+
+/*--------------------------------------------------------------*/
 
 .page-header {
 	border:none;
@@ -619,7 +669,7 @@ ol.flex-control-nav{
 ### Secondary, Default Widget Area
 --------------------------------------------------------------*/
 .widget-area {
-	padding:0 2em 0 5em;
+	/*padding:0 2em 0 5em;*/
 }
 
 
@@ -628,7 +678,7 @@ ol.flex-control-nav{
 --------------------------------------------------------------*/
 .site-footer {
 	min-height: 100px;
-	margin:0 -15%;  /* move the content over */
+	margin:2em -15%;  /* move the content over */
 	padding:35px 15% 20px 15%;
 	background-color: rgb(74,74,74);
 }
@@ -945,7 +995,6 @@ text-transform: none;
 
 .widget {
 	margin: 0 0 1.5em;
-	padding: 0 0.7em;
 	font-size: 0.9em;
 	font-family:'Open Sans', 'Arial', sans-serif;
 	color:rgb(74,74,74);
@@ -955,6 +1004,10 @@ text-transform: none;
 	font-family:'Open Sans', 'Arial', sans-serif;
 	font-size:1em;
 	font-weight: bold;
+	border-top:thin dotted black;
+	padding-top:2em;
+	font-style:normal;
+	color:rgb(74,74,74);
 }
 
 /* Make sure select elements fit in widgets. */
@@ -974,8 +1027,7 @@ text-transform: none;
 
 /* Recent Entries Sidebar Widgets */
 .recent-entries .widget-title {
-		border-top:thin dotted black;
-		padding-top:2.2em;
+
 }
 .recent-entries ul {
 	list-style: none;
@@ -1048,6 +1100,9 @@ text-transform: none;
 	text-transform:uppercase;
 	letter-spacing: 2px;
 	font-weight: normal;
+	border:none;
+	margin:0 0;
+	padding:0.8em 0;
 }
 
 /* footer menu widget */
@@ -1105,6 +1160,7 @@ ul#menu-footer-menu {
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+	line-height: 200%;
 }
 
 .page-links {
@@ -1120,7 +1176,7 @@ display:none;
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size:0.7em;
 	text-transform: uppercase;
-	border-top: solid 1px rgb(198, 198, 198);
+	/*border-top: solid 1px rgb(198, 198, 198);*/
 	letter-spacing: 2px;
 	padding-top: 5px;
 }

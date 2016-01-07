@@ -9,7 +9,7 @@
 
 
 ?>
-<div class="row">
+<div id="homepage-sidebar" class="widget-area col-md-4">
 <?php dynamic_sidebar( 'home-sidebar' ); ?>
 <div class="widget recent-entries">
 		<h2 class="widget-title">Recent Publications</h2>
@@ -30,7 +30,7 @@
 			<?php endforeach;
 			wp_reset_postdata();?>
 			</ul>
-		</div>
+		</div><!-- .widget .recent-entries-->
 	<div class="widget recent-entries">
 			<h2 class="widget-title">Recent Resources</h2>
 				<ul>
@@ -50,6 +50,6 @@
 				<?php endforeach;
 				wp_reset_postdata();?>
 				</ul>
-		</div>
-	</div><!-- .row-->
+		</div> <!-- .widget .recent-entries-->
+	</div><!--#homepage-sidebar .widget area .col-md-4-->
 <!--#secondary-->

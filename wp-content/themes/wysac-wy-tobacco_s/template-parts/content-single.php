@@ -21,6 +21,12 @@
 			 }
 				 ?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<h2 class="entry-subtitle"><?php // display subtitle custom fields
+						global $wp_query;
+						$postid = $wp_query->post->ID;
+									echo get_post_meta($postid, 'subtitle', true);
+						wp_reset_query();
+						?></h2>
 
 		<div class="entry-meta">
 			<?php wysac_wy_tobacco_posted_on();?>
@@ -29,15 +35,17 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
+		<?php /*
+			 /*wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wysac-wy-tobacco' ),
 				'after'  => '</div>',
-			) );
+			) ); */
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php wysac_wy_tobacco_entry_footer(); ?>
+		<?php
+			/*wysac_wy_tobacco_entry_footer(); */
+			?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
