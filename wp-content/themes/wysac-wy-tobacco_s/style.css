@@ -612,20 +612,14 @@ ol.flex-control-nav{
 ### Primary Content Area
 --------------------------------------------------------------*/
 .content-area {
-	float:left;
-	max-width:70%;
-	margin-right:5%;
-	padding:2em 0;
+	margin-top:2em;
 }
 
 /*--------------------------------------------------------------
 ### Secondary, Default Widget Area
 --------------------------------------------------------------*/
 .widget-area {
-	float:left;
-	width:25%;
-	min-width:150px;
-	padding:2em 0;
+	padding:0 2em 0 5em;
 }
 
 
@@ -952,7 +946,7 @@ text-transform: none;
 .widget {
 	margin: 0 0 1.5em;
 	padding: 0 0.7em;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	font-family:'Open Sans', 'Arial', sans-serif;
 	color:rgb(74,74,74);
 }
@@ -978,7 +972,7 @@ text-transform: none;
 	display: none;
 }
 
-/* Cateogry Post Plug-in widget. */
+/* Recent Entries Sidebar Widgets */
 .recent-entries .widget-title {
 		border-top:thin dotted black;
 		padding-top:2.2em;
@@ -996,7 +990,7 @@ text-transform: none;
 .recent-entries .post-date {
 	font-weight: bold;
 	color:rgb(151,139,134);
-	font-size:0.8em;
+	font-size:1em;
 }
 
 .recent-entries a:link,
@@ -1008,14 +1002,13 @@ text-transform: none;
 	color:rgb(194, 125, 56)
 }
 
-/* Link Area Widget on Home Page */
-
+/* Link Area Widgets on Home Page */
 .linkarea .widget-title {
-	padding:1.5em 0;
+	padding:1em 0 0.5em;
 	font-size:1.4em;
 }
 
-.linkarea .linkarea-topic {
+.linkarea .linkarea-topic { /* TOPIC text that appears before the get_tag name.  In a <span> */
 	font-weight:normal;
 	color:rgb(151,139,134);
 	text-transform: uppercase;
@@ -1036,6 +1029,10 @@ text-transform: none;
 
 .linkarea li {
 	margin-bottom:1.2em;
+}
+
+.linkarea img {
+	padding:0 0 1em;
 }
 
 /*--------------------------------------------------------------
@@ -1062,14 +1059,13 @@ ul#menu-footer-menu {
 }
 
 #menu-footer-menu li {
-	color:rgb(255, 0, 0);
 	text-transform:uppercase;
 	border-bottom: thin dotted white;
 	padding:1.0em 0;
 }
 
 #menu-footer-menu li:hover {
-	background-color: rgb(86,84,90);
+	background-color: rgb(86,84,90);  /* Add the hover "transparent" box */
 }
 
 #menu-footer-menu a:link,

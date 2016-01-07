@@ -38,7 +38,7 @@ $display = new Recent_Posts_FlexSlider();
                         $output .= '<div style="height: ' . $slider_height . 'px">';
                             $output .= $display->get_recent_post_flexslider_image( $image_size );
                         $output .= '</div>';
-						
+
 						// Display Post Title and/or Excerpt (option set on Appearance->Widgets)
 						if($post_title == 'true' || $post_excerpt == 'true'):
 							$output .= '<div class="flexslider-caption"><div class="flexslider-caption-inner">';
@@ -50,21 +50,21 @@ $display = new Recent_Posts_FlexSlider();
 								endif;
 							$output .= '</div></div>';
 						endif;
-					
+
                 	// End link of slide to post (if option is selected in widget options)
 					if($post_link == 'true'):
                 	    $output .= '</a>';
                 	endif;
 
                 $output .= '</li>';
-				
+
 				echo $output;
             endwhile; endif; wp_reset_query();
 			?>
         </ul>
     </div>
 </div>
-        
+
 <script type="text/javascript">
 (function ($) {
 	"use strict";
