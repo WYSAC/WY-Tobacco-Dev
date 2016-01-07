@@ -1095,10 +1095,11 @@ text-transform: none;
 
 .linkarea li {
 	margin-bottom:1.2em;
+	min-height:400px;
 }
 
 .linkarea img {
-	padding:0 0 1em;
+	padding:0 0 1.5em;
 }
 
 /*--------------------------------------------------------------
