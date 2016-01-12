@@ -1,27 +1,27 @@
 <?php
 
-/**
+/** 
  *Dashboard
  *
- * Display, add, edit,delete  post types
- */
+ * Display, add, edit,delete  post types 
+ */ 
 class mf_dashboard extends mf_admin {
 
   public $name = 'mf_dashboard';
-
+ 
   function __construct() {
 
   }
 
   function main() {
     global $mf_domain,$mf_pt_register;
-
+    
     $posttypes = $this->mf_get_post_types();
     $custom_taxonomies = $this->get_custom_taxonomies();
-
+    
     print '<div class="wrap">';
-    // print screen icon
-    print get_screen_icon('magic-fields');
+    // print screen icon 	
+    print get_screen_icon('magic-fields');   
     print '<h2>'.__( 'Magic Fields',$mf_domain).'</h2>';
     print '<h3>'.__( 'Post Types', $mf_domain ).'<a href="admin.php?page=mf_dispatcher&mf_section=mf_posttype&mf_action=add_post_type" class="add-new-h2 button mf-btn-add">'.__( 'Add new Post Type', $mf_domain ).'</a></h3>';
 
@@ -32,7 +32,7 @@ class mf_dashboard extends mf_admin {
           <th scope="col" id="title" class="manage-column column-title" width="40%"><?php _e( 'Label ',$mf_domain); ?><small>(<?php _e('Menu name',$mf_domain); ?>)</small></th>
           <th scope="col" id="type_name" class="manage-column column-title" width="30%"><?php _e( 'Type',$mf_domain); ?></th>
           <th scope="col" id="type_desc" class="manage-column column-title" width="30%"><?php _e( 'Description',$mf_domain); ?></th>
-        </tr>
+        </tr> 
       </thead>
       <tfoot>
         <tr>
@@ -42,7 +42,7 @@ class mf_dashboard extends mf_admin {
         </tr>
       </tfoot>
       <tbody>
-        <?php
+        <?php 
           $counter = 0;
   foreach($posttypes as  $pt):
           $alternate = ($counter % 2 ) ? "alternate" : "";
@@ -54,7 +54,7 @@ class mf_dashboard extends mf_admin {
             <strong><?php echo $pt->label; ?></strong><small> ( <?php echo $pt->labels->menu_name; ?> )</small>
             <div class="row-actions">
               <span class="edit">
-                <a href="admin.php?page=mf_dispatcher&mf_section=mf_custom_fields&mf_action=fields_list&post_type=<?php print $pt->name;?>">Edit Fields/Groups</a>
+                <a href="admin.php?page=mf_dispatcher&mf_section=mf_custom_fields&mf_action=fields_list&post_type=<?php print $pt->name;?>">Edit Fields/Groups</a> 
               </span>
               <?php if(in_array($pt->name,$mf_pt_register)): ?>
               |<span class="edit">
@@ -64,8 +64,8 @@ class mf_dashboard extends mf_admin {
                 <?php //nonce
                   $link = "admin.php?page=mf_dispatcher&init=true&mf_section=mf_posttype&mf_action=delete_post_type&post_type={$pt->name}";
                   $link = wp_nonce_url($link,"delete_post_type_mf_posttype");
-                ?>
-                <a class="mf_confirm" alt="<?php _e("This action can't be undone, are you sure?", $mf_domain )?>"  href="<?php print $link;?>">Delete</a>
+                ?> 
+                <a class="mf_confirm" alt="<?php _e("This action can't be undone, are you sure?", $mf_domain )?>"  href="<?php print $link;?>">Delete</a> 
 								<?php else: ?>
 									| <a href="admin.php?page=mf_dispatcher&init=false&mf_section=mf_posttype&mf_action=set_categories&post_type=<?php echo $pt->name;?>&TB_iframe=1&width=640&height=541" title="default categories" class="thickbox" onclick="return false;" >Set default categories</a>
                  <?php endif; ?>
@@ -97,7 +97,7 @@ class mf_dashboard extends mf_admin {
           <th scope="col" id="title" class="manage-column column-title" width="40%"><?php _e( 'Label ',$mf_domain); ?><small>(<?php _e('Menu name',$mf_domain); ?>)</small></th>
           <th scope="col" id="type_name" class="manage-column column-title" width="30%"><?php _e( 'Type',$mf_domain); ?></th>
           <th scope="col" id="type_desc" class="manage-column column-title" width="30%"><?php _e( 'Description',$mf_domain); ?></th>
-        </tr>
+        </tr> 
       </thead>
       <tfoot>
         <tr>
@@ -108,7 +108,7 @@ class mf_dashboard extends mf_admin {
       </tfoot>
       <tbody>
         <?php if($custom_taxonomies):?>
-          <?php
+          <?php 
             $counter = 0;
              foreach($custom_taxonomies as $tax):
              $alternate = ($counter % 2 ) ? "alternate" : "";
@@ -119,11 +119,11 @@ class mf_dashboard extends mf_admin {
           <td>
             <strong><?php echo $tax['name']; ?></strong> <small>( <?php echo $tmp['label']['menu_name']; ?> )</small>
             <div class="row-actions">
-              <span class="edit">
+              <span class="edit"> 
                 <a href="admin.php?page=mf_dispatcher&mf_section=mf_custom_taxonomy&mf_action=edit_custom_taxonomy&custom_taxonomy_id=<?php echo $tax['id']; ?>">Edit Custom Taxonomy</a> |
               </span>
               <span class="delete">
-                <?php
+                <?php 
                   $link = "admin.php?page=mf_dispatcher&init=true&mf_section=mf_custom_taxonomy&mf_action=delete_custom_taxonomy&custom_taxonomy_id={$tax['id']}";
                   $link = wp_nonce_url($link,"delete_custom_taxonomy_mf_custom_taxonomy");
                 ?>

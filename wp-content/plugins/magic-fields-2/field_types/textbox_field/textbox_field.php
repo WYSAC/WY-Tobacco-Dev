@@ -13,7 +13,7 @@ class textbox_field extends mf_custom_fields {
   public  $js_dependencies = array();
   public  $allow_multiple = TRUE;
   public  $has_properties = TRUE;
-
+  
   public function get_properties() {
     $properties['css']              = $this->css_script;
     $properties['js_dependencies']  = $this->js_dependencies;
@@ -26,10 +26,10 @@ class textbox_field extends mf_custom_fields {
     global $mf_domain;
     $this->description = __("Simple Textbox input",$mf_domain);
   }
-
+  
   public function _options(){
     global $mf_domain;
-
+    
     $data = array(
       'option'  => array(
         'evalueate'  => array(
@@ -57,7 +57,7 @@ class textbox_field extends mf_custom_fields {
     );
     return $data;
   }
-
+  
   public function display_field( $field, $group_index = 1, $field_index = 1 ) {
     global $mf_domain;
 

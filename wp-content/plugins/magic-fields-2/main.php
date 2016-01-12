@@ -3,7 +3,7 @@
  * Plugin Name: Magic Fields
  * Plugin URI: http://magicfields.org
  * Description: Create custom fields for your post types
- * Version: 2.3.2.2
+ * Version: 2.3.2.3
  * Author:  Hunk
  * Author URI: http://magicfields.org
  * License: GPL2
@@ -198,7 +198,7 @@ if( is_admin() ) {
         $action = urlencode( $_GET['mf_action'] );
       }
 
-      //check only mf_section has prefix mf
+      //check only mf_section has prefix mf    
       if ( !(strpos($section, "mf_") === 0) ) {
         die;
       }
