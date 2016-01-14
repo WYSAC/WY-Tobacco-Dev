@@ -622,52 +622,36 @@ overflow-x: hidden;
 ### Slider  Content Area - Before Primary
 --------------------------------------------------------------*/
 /*
-*  Formatting for Flexslider widget
+*  Formatting for Post Slider WD widget
 */
+
 #slider {
-	margin-top:0.5em;
+	margin:0.5em 0;
 	width:100%;
 }
 
-#recent-posts-flexslider-2 .flexslider {
-	margin:0 0;
-	max-height:450px;
-}
-
-#recent-posts-flexslider-2 .flexslider .slides img {
-	height:auto;
-}
-
-h3.flexslider-title {
-	display:none;
-}
-
-ol.flex-control-nav{
-	bottom:10px;
-}
-
-#recent-posts-flexslider-2 .flexslider-caption {
-	background-color:transparent;
-	bottom:16em;
-	width:90%;
-	float:left;
-}
-
-#recent-posts-flexslider-2 .flexslider-caption-inner {
-	text-align:left;
-	padding: 0 2em;
+#slider p {
+	font-family:'Open Sans', Helvetica, Arial, sans-serif;
 	font-size:1.2em;
-	font-family:'Open Sans', Arial, sans-serif;
-	text-shadow: 2px 2px 10px #000000;
+	line-height: 150%;
 }
-#recent-posts-flexslider-2 .flexslider-caption-inner h3 {
-	font-size:2.0em;
-	font-family:'Merriweather', 'Georgia', 'serif';
-	line-height: 1.25em;
-	margin-bottom:7px;
-	text-transform:none;
-	padding: 0 0;
+
+#slider h1 {
+	font-family:'Merriweather', 'Georgia', serif;
+	font-weight:bold;
+	line-height: 125%;
+	font-size: 2.25em;
+	margin:0.8em 0 0.4em 0;
+	padding:0 0;
 }
+
+.wdps_slideshow_dots_container_0 {
+	margin-bottom:20px;
+}
+
+
+
+
 /*--------------------------------------------------------------
 ### Primary Content Area
 --------------------------------------------------------------*/
@@ -1411,14 +1395,41 @@ object {
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
-@media (max-width:775px) {
-	/*tablets*/
+@media (max-width:800px) {
 	#page {
 		padding: 0 5%;
 	}
+	/* Headings and Text */
+
+	:root {
+		font-size: 2.5vw;
+	}
+	.site-branding {
+		font-size:1.5vw;
+	}
+
+	/* Images and graphics */
+	img {
+		clear:both;
+		min-wdith:300px;
+	}
 
 }
-@media (max-width:360px) {
+@media (max-width: 600px) {
 	/*phones large and small*/
+
+
+		/* Headings and Text */
+		:root {
+			font-size:3vw;
+		}
+		.site-branding {
+			font-size:2vw;
+		}
+
+	img {
+		width:100%;
+		clear:both;
+	}
 
 }

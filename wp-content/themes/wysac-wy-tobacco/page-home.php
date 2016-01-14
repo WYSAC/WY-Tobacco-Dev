@@ -10,7 +10,7 @@
 get_header(); ?>
 
 <div id="slider">
-	<?php dynamic_sidebar('slider');?>
+	<?php wdp_slider(1); ?>
 		</div>
 <div class="row">
 		<div id="primary" class="content-area">

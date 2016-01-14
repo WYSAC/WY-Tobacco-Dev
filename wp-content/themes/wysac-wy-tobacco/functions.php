@@ -115,7 +115,7 @@ function wysac_wy_tobacco_widgets_init() {
 	register_sidebar( array(
 		'name'					=> esc_html__('Homepage - Slider', 'wysac-wy-tobacco'),
 		'id'            => 'slider',
-		'description'   => 'Content for sidebar on home page posts',
+		'description'   => 'Content for slider on home page ',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
