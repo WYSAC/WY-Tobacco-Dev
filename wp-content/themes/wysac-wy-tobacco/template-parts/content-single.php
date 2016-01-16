@@ -46,7 +46,7 @@
 
 	<footer class="entry-footer">
 		<?php
-			/*wysac_wy_tobacco_entry_footer(); */
+			wysac_wy_tobacco_entry_footer();
 			?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

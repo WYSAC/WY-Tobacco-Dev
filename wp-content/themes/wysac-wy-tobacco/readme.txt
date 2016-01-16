@@ -16,7 +16,7 @@ A starter theme called WYSAC Wyoming Tobacco, or underscores.
 Hi. I'm a starter theme called WYSAC Wyoming Tobacco, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
 == Installation ==
-	
+
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
@@ -31,6 +31,9 @@ WYSAC Wyoming Tobacco includes support for Infinite Scroll in Jetpack.
 
 = 1.0 - May 12 2015 =
 * Initial release
+
+= 1.1 - January 15 2016 =
+* initial WY tobacco customizations
 
 == Credits ==
 

@@ -1,5 +1,6 @@
 HELPFUL NOTES
 WYSAC Wyoming Tobacco Project
+V 1.0.0
 
 
 || GENERAL CONTENT WRANGLING ||
@@ -104,4 +105,4 @@ This text is be changed by editing the Home Page under Pages.  This page is set 
 The recent lists in the sidebar are hard coded in the side-homepage.php template.  The promo image at the top is a Widget and can be edited by visiting Appearance / Widgets / Homepage Promo Image.
 
 * Baseball Cards *
-The baseball cards are in a dynamic widget area.  
+The baseball cards are in a dynamic widget area.
