@@ -30,7 +30,7 @@
 						?></h2>
 
 		<div class="entry-meta">
-			<? php if ( ! function_exists( 'twentyten_posted_on' ) ) :
+			<? php if ( ! function_exists( 'wysac_wy_tobacco_posted_on' ) ) :
 							/**
 							 * Integrate Co-Authors Plus with wysac-wy-tobacco by replacing wysac_wy_tobacco_posted_on() with this function
 							 */
